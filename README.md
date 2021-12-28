@@ -1,5 +1,7 @@
 # About Exif Grabber [ Beta Version ]
 Exif Grabber is a python tool designed to extract exif data from picture with two methods
+# Requirements
+- Python3+
 
 # Screenshot
 Screenshot showing a part of it working
