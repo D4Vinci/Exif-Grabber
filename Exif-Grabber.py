@@ -16,11 +16,11 @@ if sys.version_info[0] < 3:
 # Extract exif data from picture with two methods
 # Coded By karim Shoair | D4Vinci
 # All Copyright To Squnity Company Team & Deveolopers
-""");
-photo=input("\nPhoto Name : ");
-print ("\n[1] Method one\n");
-img =Image.open(photo);
-exif = img._getexif();
+""")
+photo=input("\nPhoto Name : ")
+print ("\n[1] Method one\n")
+img =Image.open(photo)
+exif = img._getexif()
 for tag in exif:
     tagname= TAGS.get(tag,tag)
     value=exif[tag]
