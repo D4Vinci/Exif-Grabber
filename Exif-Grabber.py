@@ -6,7 +6,7 @@ from PIL.ExifTags import TAGS
 if sys.version_info[0] < 3:
     raise Exception("Python 3 or greater required.")
 
-  print("""
+print("""
  _____        _   __    ____              _      _
 | ____|__  __(_) / _|  / ___| _ __  __ _ | |__  | |__    ___  _ __
 |  _|  \ \/ /| || |_  | |  _ | '__|/ _` || '_ \ | '_ \  / _ \| '__|
@@ -25,7 +25,7 @@ for tag in exif:
     tagname= TAGS.get(tag,tag)
     value=exif[tag]
     print(str(tagname) +" : "+str(value))
-print("-"*10);
+print("-"*10)
 
 print("\n[2] Method Two\n")
 f = open(photo, 'rb')
